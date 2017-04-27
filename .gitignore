@@ -1,0 +1,6 @@
+
+src/
+spec/
+**/*.map
+README.md
+LICENSE
