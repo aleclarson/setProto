@@ -1,6 +1,8 @@
 
-module.exports = Object.setPrototypeOf || function(value, proto) {
-  value.__proto__ = proto;
+var setPrototypeOf = Object.setPrototypeOf || function(v, p) { v.__proto__ = p };
+
+module.exports = function setProto(value, proto) {
+  setPrototypeOf(value, proto);
   return value;
 };
 
